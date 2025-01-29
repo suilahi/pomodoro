@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pomodoro.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Todo</title>
 </head>
-<body  class="bg-[url(/img/back.jpg)]  bg-cover bg-no-repeat min-h-screen text-gray-900">
-    <div><img src="img/menu.png" alt="icon menu" class="h-12 w-12"></div> 
-    <div class="bg-[#2FA2DC] h-18 w-18 opacity[50%] ">
-    <div class="text-white underline"> acceuil</div>   
-    <div class="text-white underline"> Taches</div>
+
+<body>
+    <div
+        class="home bg-[url(/img/back.jpg)]  bg-cover bg-no-repeat min-h-screen text-gray-900 w-full max-h-full relative">
+
+        <div
+            class="counter bg-[url(/img/back.jpg)]bg-cover bg-no-repeat w-full h-full absolute top-0 left-0 flex justify-center items-center ">
+            <div>
+                <div class="text-9xl text-white text-center font-bold ">25:00</div>
+                <div class="flex flex-col items-center justify-center mt-8">
+                    <button
+                        class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32 ">START</button>
+                    <div>
+                        <button class="bg-[#2FA2DC] text-4xl text-white mt-4 mx-8 rounded-md w-64">Break 5min</button>
+                        <button class="bg-[#2FA2DC] text-4xl text-white  mt-4 mx-8 rounded-md w-64">Break 15min</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table w-full h-full absolute " style="display: none;">
+            <div class="bg-black bg-black/50 rounded-lg shadow-sm p-4 mt-4 mx-16">
+                <div class="flex items-center justify-center p-4 md:p-5">
+                    <h3 class="bg-[#C9BDB2] h-8 rounded-lg text-lg font-semibold text-white  "> Tableux des taches</h3>
+                </div>
+                <div class=" bg-[#3C6B89] mx-2 mt-2  bg-[#3C6B89]/70 ">
+                    <div class="grid gap-4 mb-4 grid-cols-2 mx-2 ">
+                        <div class="col-span-2 mt-4 mb-4 ">
+                            <div id="task" class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 ">
+                                <div class="flex justify-end mt-2">
+                                    <button class="bg-[#FB1920] rounded-lg mx-2 text-white ">DELETE</button>
+                                    <button class="bg-[#4DA1A9] rounded-lg mx-2 text-white ">EDIT</button>
+                                </div>
+                            </div>
+                            <div class="col-span-2">
+                                <div type="text" name="name" id="task2"
+                                    class="bg-[#D9D9D9] border border-gray-300 rounded-lg  h-12 mt-2 ">
+                                    <div class="flex justify-end mt-2">
+                                        <button class="bg-[#FB1920] rounded-lg mx-2 text-white ">DELETE</button>
+                                        <button class="bg-[#4DA1A9] rounded-lg mx-2 text-white ">EDIT</button>
+                                    </div>
+                                </div>
+                                <div class="col-span-2">
+                                    <div type="text" name="name" id="task3"
+                                        class="bg-[#D9D9D9] border border-gray-300  rounded-lg h-12 mt-2">
+                                        <div class="flex justify-end mt-2">
+                                            <button class="bg-[#FB1920] rounded-lg mx-2 text-white">DELETE</button>
+                                            <button class="bg-[#4DA1A9] rounded-lg mx-2 text-white ">EDIT</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <div type="text" name="name" id="task4"
+                                            class="bg-[#D9D9D9] border border-gray-300  rounded-lg h-12 mt-2 ">
+                                            <div class="flex justify-end mt-2">
+                                                <button class="bg-[#FB1920] rounded-lg mx-2 text-white ">DELETE</button>
+                                                <button class="bg-[#4DA1A9] rounded-lg mx-2 text-white ">EDIT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex justify-end"> <button type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 ">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu relative w-32 h-36 ">
+            <div class="absolute top-0 left-0 h-full w-full">
+                <div> 
+                    <button><img src="img/menu.png" alt="icon menu" class="h-12 w-12 cursor-pointer
+                        "></button>
+                </div>
+                <div class=" rounded-lg h-32 w-24 relative ml-4 z-30">
+                    <button class="text-white  text-xl underline mt-4 ml-4 cursor-pointer"> acceuil</button>
+                    <button class="text-white text-xl underline mt-4 ml-4 cursor-pointer"> Taches</button>
+                </div>
+            </div>
+            <div class="overlay absolute top-0 left-0 h-full w-full bg-[#2FA2DC] opacity-50 z-10 mt-12">
+            </div>
+        </div>
     </div>
 </body>
-<script src="pomodoro.js"></script>
-</html> 
+
+</html>
