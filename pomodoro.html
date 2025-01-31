@@ -18,128 +18,148 @@
             <div id="acceuil">
                 <div id="timerDisplay" class="text-9xl text-white text-center font-bold ">25:00</div>
                 <div class="flex flex-col items-center justify-center mt-8 ">
-                <div class="mr-4" >
-                    <button id="pauseTimer" class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32  ml-4">Pause<button></button>
-                    <button id="startTimer" class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32 mx-2">START<button>
-                     <button id="resetTimer" class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32 ml-4">Restart<button></div>
+                    <div class="mr-4">
+                        <button id="pauseTimer"
+                            class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32  ml-4">Pause<button></button>
+                            <button id="startTimer"
+                                class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32 mx-2">START<button>
+                                    <button id="resetTimer"
+                                        class="bg-[#2FA2DC] text-4xl text-white text-center mt-4 rounded-lg h-12 w-32 ml-4">Restart<button>
+                    </div>
                     <div>
-                        <button id="shortBreak" class="bg-[#2FA2DC] text-4xl text-white mt-4 mx-8 rounded-md w-64">Break 5min</button>
-                        <button id="longBreak" class="bg-[#2FA2DC] text-4xl text-white  mt-4 mx-8 rounded-md w-64">Break 15min</button>
+                        <button id="shortBreak" class="bg-[#2FA2DC] text-4xl text-white mt-4 mx-8 rounded-md w-64">Break
+                            5min</button>
+                        <button id="longBreak" class="bg-[#2FA2DC] text-4xl text-white  mt-4 mx-8 rounded-md w-64">Break
+                            15min</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="table" class="table w-full h-full absolute"  style="display: none;">
+        <div id="table" class="table w-full h-full absolute" style="display: none;">
             <div class="bg-black bg-black/50 rounded-lg shadow-sm p-4 mt-4 mx-16">
                 <div class="flex items-center justify-center p-4 md:p-5">
                     <h3 class="bg-[#C9BDB2] h-8 rounded-lg text-lg font-semibold text-white  "> Tableux des taches</h3>
                 </div>
                 <div class=" bg-[#3C6B89] mx-2 mt-2 bg-[#3C6B89]/70 ">
-                    <div class="grid gap-4 mb-4 grid-cols-2 mx-2 ">
+                    <div class="grid gap-4 mb-4 grid-cols-2 mx-2 "> 
                         <div class="col-span-2 mt-4 mb-4 ">
-                           <div class="flex">
-                            <div id="task" class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 "> 
-                            </div>
-                                <div class="flex justify-end mt-2">
-                                    <button class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299]">EDIT</button>
-                                <button class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
-                                </div>
-                            </div>
-                            <div class="col-span-2 mt-4 mb-4 ">
+                         <li>
                                 <div class="flex">
-                                 <div id="task" class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 "> 
-                                 </div>
-                                     <div class="flex justify-end mt-2">
-                                        <button class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299] ">EDIT</button>
-                                        <button class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
-                                     </div>
-                                 </div>
-                                 <div class="col-span-2 mt-4 mb-4 ">
+                                    <div id="task"
+                                        class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 ">
+                                    </div>
+                                    <div class="flex justify-end mt-2">
+                                        <button
+                                            class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299]">EDIT</button>
+                                        <button
+                                            class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
+                                    </div>
+                                </div>
+                                <div class="col-span-2 mt-4 mb-4 ">
                                     <div class="flex">
-                                     <div id="task" class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 "> 
-                                     </div>
-                                         <div class="flex justify-end mt-2">
-                                             <button class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299]">EDIT</button>
-                                             <button class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
-                                             
-                                         </div>
-                                     </div>
-                                </div>
+                                        <div id="task1"
+                                            class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 ">
+                                        </div>
+                                        <div class="flex justify-end mt-2">
+                                            <button
+                                                class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299] ">EDIT</button>
+                                            <button
+                                                class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-2 mt-4 mb-4 ">
+                                        <div class="flex">
+                                            <div id="task2"
+                                                class="bg-[#D9D9D9] border border-gray-300  rounded-lg w-full h-12 mt-2 ">
+                                            </div>
+                                            <div class="flex justify-end mt-2">
+                                                <button
+                                                    class="bg-[#4DA1A9] rounded-lg mx-2 w-12 h-12 text-white cursor-pointer hover:bg-[#489299]">EDIT</button>
+                                                <button
+                                                    class="bg-[#FB1920] rounded-lg mx-2 text-white cursor-pointer hover:bg-[#D42228]">DELETE</button>
+
+                                            </div>
+                                        </div>
+                                  </div>
                             </div>
+                            </li>
                         </div>
                     </div>
 
                 </div>
-                <div class="flex justify-end"> <button type="submit"
-                      id="add"  class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 ">Add</button>
+                <div class="flex justify-end"> <button type="submit" id="add"
+                        class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 ">Add</button>
                 </div>
 
             </div>
         </div>
-        <div id="Create" class="Create absolute  w-full h-full"  style="display: none;" >
+        <div id="Create" class="Create absolute  w-full h-full" style="display: none;">
             <div class="flex justify-center ">
-            <div class="p-4 relative w-full max-w-md max-h-full ">
-                <div class="bg-black/50 rounded-lg shadow-sm  ">
-                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
-                        <h3 class="text-lg font-semibold text-white">
-                            Create New task
-                        </h3>
-                    </div>
-                    <form class="p-4 md:p-5">
-                        <div class="bg-black ">
-                            <div class="grid gap-4 mb-4 grid-cols-2 mx-2">
-                                <div class="col-span-2">
-                                    <label for="name" class="block mb-2 text-sm font-medium text-white">Title</label>
-                                    <input type="text"
-                                        class="bg-[#C9BDB2] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                                        placeholder="Title">
-                                </div>
-                                <div class="col-span-2 sm:col-span-1">
-                                    <label for="category"
-                                        class="block mb-2 text-sm font-medium text-white ">Priority</label>
-                                    <select id="category"
-                                        class="bg-[#C9BDB2] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 w-full p-2.5">
-                                        <option selected="">Select </option>
-                                        <option value="Low">Low</option>
-                                        <option value="Medium">Medium </option>
-                                        <option value="High">High</option>
-                                    </select>
-                                </div>
-                                <div class="col-span-2">
-                                    <label for="description"
-                                        class="block mb-2 text-sm font-medium text-white ">Description</label>
-                                    <textarea id="description" rows="4"
-                                        class="block p-2.5 w-full text-sm text-gray-900 bg-[#C9BDB2] rounded-lg resize-none"
-                                        placeholder="Write description here"></textarea>
-                                </div>
-                            </div>
-                            <div class="flex justify-end">
-                                <button type="submit"
-                                   id="done" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mr-4">
-                                    Done
-                                </button>
-                            </div>
+                <div class="p-4 relative w-full max-w-md max-h-full ">
+                    <div class="bg-black/50 rounded-lg shadow-sm  ">
+                        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                            <h3 class="text-lg font-semibold text-white">
+                                Create New task
+                            </h3>
                         </div>
-                    </form>
+                        <form class="p-4 md:p-5">
+                            <div class="bg-black ">
+                                <div class="grid gap-4 mb-4 grid-cols-2 mx-2">
+                                    <div class="col-span-2">
+                                        <label for="name"
+                                            class="block mb-2 text-sm font-medium text-white">Title</label>
+                                        <input type="text"
+                                            class="bg-[#C9BDB2] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                                            placeholder="Title">
+                                    </div>
+                                    <div class="col-span-2 sm:col-span-1">
+                                        <label for="category"
+                                            class="block mb-2 text-sm font-medium text-white ">Priority</label>
+                                        <select id="category"
+                                            class="bg-[#C9BDB2] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 w-full p-2.5">
+                                            <option selected="">Select </option>
+                                            <option value="Low">Low</option>
+                                            <option value="Medium">Medium </option>
+                                            <option value="High">High</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <label for="description"
+                                            class="block mb-2 text-sm font-medium text-white ">Description</label>
+                                        <textarea id="description" rows="4"
+                                            class="block p-2.5 w-full text-sm text-gray-900 bg-[#C9BDB2] rounded-lg resize-none"
+                                            placeholder="Write description here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <button type="submit" id="done"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mr-4">
+                                        Done
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="menu relative w-32 h-36 " >
+        <div class="menu relative w-32 h-36 ">
             <div class="absolute top-0 left-0 h-full w-full">
                 <div>
                     <button id="btn"><img src="img/menu.png" alt="icon menu" class="h-12 w-12 cursor-pointer"></button>
                 </div>
                 <div id="menu" style="display: none;">
-                <div class=" rounded-lg h-32 w-24 relative ml-4 z-30"  >
-                    <button id="acc" class="text-white  text-xl underline mt-4 ml-4 cursor-pointer"> acceuil</button>
-                    <button id="tache" class="text-white text-xl underline mt-4 ml-4 cursor-pointer"> Taches</button>
-                </div>
-                <div class="overlay absolute top-0 left-0 h-full w-full bg-[#2FA2DC] opacity-50 z-10 mt-12">
+                    <div class=" rounded-lg h-32 w-24 relative ml-4 z-30">
+                        <button id="acc" class="text-white  text-xl underline mt-4 ml-4 cursor-pointer">
+                            acceuil</button>
+                        <button id="tache" class="text-white text-xl underline mt-4 ml-4 cursor-pointer">
+                            Taches</button>
+                    </div>
+                    <div class="overlay absolute top-0 left-0 h-full w-full bg-[#2FA2DC] opacity-50 z-10 mt-12">
+                    </div>
                 </div>
             </div>
-            </div>
-            
+
         </div>
     </div>
     </div>
